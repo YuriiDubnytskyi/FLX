@@ -1,0 +1,137 @@
+@media screen{
+	h2 + p{
+		font-style: italic;
+	}
+	p::first-letter{
+		font-size: 30px;
+		color: #87cefa;
+	}
+	.tm-main-content section:nth-child(2)::before,
+	.tm-main-content section:nth-child(3)::before,
+	.tm-main-content section:nth-child(5)::before{
+	/*Created by Yurii Dubnitskyi*/	
+	content: '';
+	width: 0;
+	height: 0;	
+	border-top: 30px solid #5ce;
+	border-right: 250px solid transparent;
+	}
+	h2.tm-box-bg-title:hover{
+		background-color: #31b0d5;
+		color:white;
+		font-weight: bold;
+	}
+
+	#ideas .tm-section-title{
+		color:gainsboro ;
+		letter-spacing: 5px;
+	}
+	.blocks ul.boxes li.box:nth-child(odd){
+		background-color: whitesmoke;
+	}
+	.blocks ul.boxes li.box{
+    list-style: none;
+    width: 33.333333333333333333333333333333334%;
+    height: auto;
+    padding: 10px;
+	}
+	ul.boxes li.box p::first-letter{
+		color: black;
+	}
+	.tm-content-box , .tm-sidebar{
+	    box-shadow: 0 0 25px rgba(0,0,0,0.5); 
+	}
+	.tm-banner {
+    padding: 0;
+    border: solid 30px #f5f5f5;
+	}
+	div.tm-content-box > div.padding-medium > p {
+		text-indent: 1.5em;
+		line-height: 2em;
+	}
+	.padding-medium ol a {
+		color: black;
+	}
+	
+	.padding-medium ol a:hover{
+		text-decoration: underline double;
+		color: #76cdd7
+	}
+	.padding-medium ol a.text::after{
+		content: 'New';
+		vertical-align:super;
+		color: red;
+		font-size: 10px;
+	}
+	.padding-medium ol a:visited{
+		text-decoration: underline;
+	}
+	.mandatory-field::after{
+		content: '*';
+		color:red;
+		font-weight: bold;
+	}
+	.btn:hover{
+		color: white;
+		background-color: #87cefa;
+		border: 1px solid #87cefa;
+	}
+	.btn{
+		background: 0;
+		color: #31b0d5;
+		float: right;
+		padding: 15px 60px;
+		border-radius: 0;
+		border: 1px solid #87cefa;
+	}
+	.tm-nav-item-link:hover{
+		background: #f5f5f5;
+	}
+	section:first-of-type > div:first-child {
+  		display: flex;
+	}
+	.tm-team-description-container{
+		padding-top: 190px;
+	}
+
+
+}
+@media print {
+  	.tm-sidebar, section, section > div {
+   		display: none;
+  	}
+
+  	section:first-of-type, section:first-of-type > div:first-child {
+    	display: block;
+  	}
+
+  	section::before {
+    	border: none;
+  	}
+
+  	section .tm-section-title {
+    	color: blue;
+  	}
+
+  	.flex-item img {
+    	position: absolute;
+    	width: 200px;
+    	top: 500px;
+    	right: 50px;
+  	}
+  	h2 + p{
+		font-style: italic;
+	}
+	p::first-letter{
+		font-size: 30px;
+		color: #87cefa;
+	}
+	div.tm-content-box > div.padding-medium > p {
+		text-indent: 1.5em;
+		line-height: 2em;
+	}
+	/*Created by Yurii Dubnitskyi*/
+	.tm-team-description-container {
+    	padding-right: 200px;
+	}
+}
